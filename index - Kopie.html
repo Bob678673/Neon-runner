@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Neon Runner</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div id="game">
+
+        <!-- Das eigentliche Spielfeld -->
+        <canvas id="gameCanvas"></canvas>
+
+        <!-- Punktestand -->
+        <div id="score">
+            SCORE: <span id="scoreValue">0</span>
+        </div>
+
+        <!-- Startbildschirm -->
+        <div id="startScreen" class="screen">
+
+            <div class="menu">
+
+                <h1>
+                    NEON<br>
+                    <span>RUNNER</span>
+                </h1>
+
+                <p>RUN • JUMP • COLLECT</p>
+
+                <button id="playButton">
+                    PLAY
+                </button>
+
+                <small>
+                    SPACE / KLICK / TAP = SPRINGEN
+                </small>
+
+            </div>
+
+        </div>
+
+
+        <!-- Game-Over-Bildschirm -->
+        <div
+            id="gameOverScreen"
+            class="screen hidden"
+        >
+
+            <div class="menu">
+
+                <h2>GAME OVER</h2>
+
+                <p>
+                    SCORE:
+                    <span id="finalScore">0</span>
+                </p>
+
+                <button id="restartButton">
+                    RESTART
+                </button>
+
+                <small>
+                    R = NEUSTART
+                </small>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- Unser JavaScript -->
+    <script src="game.js"></script>
+
+</body>
+
+</html>
